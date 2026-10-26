@@ -7,6 +7,7 @@
 | 이름 | 종류 | 한 줄 소개 |
 | --- | --- | --- |
 | [superpowers](https://github.com/obra/superpowers) | 플러그인 | 브레인스토밍 → 계획 → TDD → 리뷰로 이어지는 개발 방법론을 스킬 묶음으로 제공. 상황에 맞춰 자동 발동 |
+| [context7](https://github.com/upstash/context7) | 플러그인 (MCP) | 라이브러리의 최신 공식 문서를 조회해 버전에 맞는 코드를 쓰도록 도움. ecc의 `docs-lookup` 에이전트도 사용 |
 | [anthropics/skills](https://github.com/anthropics/skills) | 플러그인 | Anthropic 공식 스킬 모음. `document-skills`(docx·pdf·pptx·xlsx)와 `example-skills`(디자인, MCP 서버 생성, 웹앱 테스트 등) |
 | [ecc](https://github.com/affaan-m/ecc) | 플러그인 | 에이전트 하네스 최적화 시스템. 언어별 리뷰어·빌드 해결 에이전트, 스킬, 훅, 메모리, 보안 점검 등을 대량 제공 |
 | [ponytail](https://github.com/dietrichgebert/ponytail) | 플러그인 | "가장 게으른 시니어 개발자"처럼 생각하게 만드는 스킬. 불필요한 코드를 덜 쓰고 기존 것을 재사용하도록 유도 |
@@ -36,6 +37,9 @@ Claude Code 안에서 실행합니다.
 ```
 # superpowers (공식 마켓플레이스)
 /plugin install superpowers@claude-plugins-official
+
+# context7 (공식 마켓플레이스)
+/plugin install context7@claude-plugins-official
 
 # anthropics/skills
 /plugin marketplace add anthropics/skills

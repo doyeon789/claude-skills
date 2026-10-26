@@ -10,6 +10,7 @@ $Marketplaces = @(
 
 $Plugins = @(
     'superpowers@claude-plugins-official'
+    'context7@claude-plugins-official'
     'document-skills@anthropic-agent-skills'
     'example-skills@anthropic-agent-skills'
     'ecc@ecc'

@@ -43,7 +43,7 @@ if (Get-Command uv -ErrorAction SilentlyContinue) {
     Run 'uv' @('tool', 'install', 'graphifyy')
     Run 'graphify' @('install')
     Run 'uv' @('tool', 'install', '--python', '3.13', 'headroom-ai[all]')
-    Run 'headroom' @('wrap', 'claude')
+    # headroom wrap claude는 Claude를 실행하는 런처라 스크립트에서 돌리지 않음
 } else {
     Write-Warning 'uv가 없어 graphify / headroom 설치를 건너뜁니다. https://docs.astral.sh/uv/'
     $Failed.Add('graphify / headroom (uv 없음)')

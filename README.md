@@ -12,7 +12,7 @@
 | [ecc](https://github.com/affaan-m/ecc) | 플러그인 | 에이전트 하네스 최적화 시스템. 언어별 리뷰어·빌드 해결 에이전트, 스킬, 훅, 메모리, 보안 점검 등을 대량 제공 |
 | [ponytail](https://github.com/dietrichgebert/ponytail) | 플러그인 | "가장 게으른 시니어 개발자"처럼 생각하게 만드는 스킬. 불필요한 코드를 덜 쓰고 기존 것을 재사용하도록 유도 |
 | [graphify](https://github.com/Graphify-Labs/graphify) | CLI + 스킬 | 코드베이스·문서·SQL 스키마·PDF를 질의 가능한 지식 그래프로 변환하는 `/graphify` 스킬. 로컬 AST 파싱, 벡터 DB 불필요 |
-| [headroom](https://github.com/headroomlabs-ai/headroom) | CLI / 프록시 | 툴 출력·로그·파일을 LLM에 보내기 전에 압축해 토큰 절감. `headroom wrap claude`로 Claude Code에 적용 |
+| [headroom](https://github.com/headroomlabs-ai/headroom) | CLI / 프록시 | 툴 출력·로그·파일을 LLM에 보내기 전에 압축해 토큰 절감. `claude` 대신 `headroom wrap claude`로 실행해서 사용 |
 
 ## 설치
 
@@ -66,5 +66,5 @@ graphify install               # 사용 중인 어시스턴트를 감지해 스�
 
 # headroom
 uv tool install --python 3.13 "headroom-ai[all]"   # 또는: pip install "headroom-ai[all]"
-headroom wrap claude           # Claude Code에 적용 (해제: headroom unwrap claude)
+headroom wrap claude           # claude 대신 이 명령으로 실행하면 headroom 프록시를 거침
 ```

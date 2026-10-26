@@ -41,7 +41,7 @@ if command -v uv >/dev/null 2>&1; then
   run uv tool install graphifyy
   run graphify install
   run uv tool install --python 3.13 "headroom-ai[all]"
-  run headroom wrap claude
+  # headroom wrap claude는 Claude를 실행하는 런처라 스크립트에서 돌리지 않음
 else
   echo "uv가 없어 graphify / headroom 설치를 건너뜁니다. https://docs.astral.sh/uv/" >&2
   failed+=("graphify / headroom (uv 없음)")
